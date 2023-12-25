@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="/layout/pw.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secure Random Password Generator</title>
+<link rel="icon" href="/layout/dice.svg">
+<script src="/secpw.js" integrity="sha256-qFaKOv+VLgbPmodC4ZRsaUZn8jN+gSF3abCTtP/NTU4="></script>
+<script src="/web.js" integrity="sha256-0/oxgxAq2ekcd/k/KOgCDE9HUfUTfBuU2UJRK6/ISKM="></script>
+<meta name="description" content="Generates a secure, random password in the browser.">
+<meta name="keywords" content="password,security,javascript">
+<meta property="og:title" content="Secure Random Password Generator">
+<meta property="og:description" content="Generates a secure, random password in the browser.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://password.hboeck.de/layout/dice.png">
+<meta property="og:url" content="https://password.hboeck.de/">
+<link rel="canonical" href="https://password.hboeck.de/">
+</head>
+<body>
+<div class="main">
+<h1>Secure Random Password Generator</h1>
+<p class="center">
+<img src="layout/dice.svg" width="300" height="300" alt="Dice">
+</p>
+<p class="center">
+<label for="pw" hidden>Password</label>
+<input type="text" size="16" id="pw" aria-label="Password" disabled><button id="cpy">Copy</button><br>
+<br>
+<button id="gen">Generate Password</button>
+</p>
+<ul>
+<li>Creates a secure, random password in Javascript.</li>
+<li>Password is created in the browser and never transmitted to any remote host.</li>
+<li>Uses a cryptographically secure random number generator,
+a uniform distribution, and avoids a modulo bias.</li>
+<li>No trackers, no third-party resources.</li>
+<li>Extensive use of security features: HTTPS, HSTS, Content Security Policy, Subresource Integrity,
+and more.</li>
+<li>Everything is <a href="https://github.com/hannob/secpw">Open Source</a>.</li></ul>
+<p>Created by <a href="https://hboeck.de/">Hanno Böck</a>.
+<a href="https://www.svgrepo.com/svg/186569/dice">Dice icon</a> from SVG Repo (CC0).
+</p>
+</div>
+</body></html>
