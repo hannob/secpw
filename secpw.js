@@ -1,6 +1,8 @@
 function secpw(pwlen) {
   if (pwlen === undefined) {
     pwlen = 15;
+  } else if (!Number.isInteger(pwlen) || pwlen <= 0) {
+    throw new Error("pwlen must be a positive integer");
   }
 
   const pwchars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
