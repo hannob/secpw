@@ -1,0 +1,14 @@
+header always set "Content-Security-Policy" "default-src 'none';script-src 'self';style-src 'self';img-src 'self';upgrade-insecure-requests;frame-ancestors 'none';base-uri 'self';form-action 'none'"
+header always set "X-Frame-Options" "DENY"
+header always set "X-Content-Type-Options" "nosniff"
+header always set "Referrer-Policy" "strict-origin-when-cross-origin"
+header always set "Permissions-Policy" "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+header always set "Cross-Origin-Resource-Policy" "same-origin"
+header always set "Cross-Origin-Embedder-Policy" "require-corp"
+header always set "Cross-Origin-Opener-Policy" "same-origin"
+
+<filesMatch ".(ico|svg|png|js|css|txt|html)$">
+Header set Cache-Control "max-age=2592000"
+</filesMatch>
+
+AddOutputFilterByType BROTLI_COMPRESS;DEFLATE text/css text/javascript image/svg+xml text/html text/plain
