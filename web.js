@@ -2,7 +2,7 @@
 
 function gen() {
   let inp = document.getElementById("pw");
-  inp.value = secpw();
+  inp.value = simplesecpw();
 }
 
 function cpy() {

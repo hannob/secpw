@@ -1,3 +1,4 @@
+/* (c) Hanno Boeck, 0BSD license, https://password.hboeck.de/ */
 function secpw(pwlen) {
   if (pwlen === undefined) {
     pwlen = 15;

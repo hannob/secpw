@@ -1,3 +1,4 @@
+/* (c) Hanno Boeck, 0BSD license, https://password.hboeck.de/ */
 function simplesecpw() {
   const pwlen = 15;
   const pwchars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
