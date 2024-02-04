@@ -7,8 +7,8 @@ function secpw(pwlen, pwchars) {
   }
 
   if (pwchars === undefined) {
-    const pwchars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  } else if (typeof pwchars !== 'string') {
+    pwchars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  } else if (typeof pwchars !== "string") {
     throw new Error("pwchars must be a string");
   } else if (pwchars.length > 256) {
     throw new Error("pwchars must be <= 256");
