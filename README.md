@@ -14,6 +14,11 @@ variant with a parameter for the password length.
 The code can easily be adapted for other character classes or password length
 requirements.
 
+See also:
+
+* [How to create a Secure, Random Password with JavaScript](
+  https://blog.hboeck.de/archives/907-How-to-create-a-Secure,-Random-Password-with-JavaScript.html)
+
 # demo
 
 A live web page using the simplesecpw function can be found here:
